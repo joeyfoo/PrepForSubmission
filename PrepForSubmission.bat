@@ -1,5 +1,5 @@
 echo off 
-echo PrepForSubmission.bat v1.0
+echo PrepForSubmission.bat v1.1 (updated 28 Nov 2013)
 echo By Joey Foo (joeyfoo.github.io)
 echo -----
 echo This batch file is for use on the root directory of a Visual Studio solution, 
@@ -30,6 +30,8 @@ del ..\%outputDir%\*.user /q
 
 del ..\%outputDir%\.gitignore /q
 rmdir ..\%outputDir%\.git /s /q
+
+rmdir ..\%outputDir%\ipch /q
 
 del ..\%outputDir%\*.bat /q
 
