@@ -1,13 +1,10 @@
 echo off 
-echo PrepForSubmission.bat v1.1 (updated 28 Nov 2013)
-echo By Joey Foo (joeyfoo.github.io)
+echo PrepForSubmission.bat v1.2 (updated 31 Jan 2014)
+echo By Joey Foo (joeyfoo.com) and contributors
 echo -----
-echo This batch file is for use on the root directory of a Visual Studio solution, 
-echo and will copy the current folder out and delete unnecessasary files (\Debug, 
-echo opensdb, ncb, suo .etc) in preparation for zipping and submission online. 
 echo.
 echo DISCLAIMER: This batch file is provided AS-IS, it's your responsibility 
-echo to double-check before submission!
+echo to double-check before submission! 
 echo.
 echo ----------
 
