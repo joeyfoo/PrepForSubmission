@@ -22,20 +22,21 @@ rmdir ..\%outputDir% /s /q
 mkdir ..\%outputDir%
 xcopy * ..\%outputDir% /s /c /i
 
-del ..\%outputDir%\*.opensdb /q
-del ..\%outputDir%\*.ncb /q
-del ..\%outputDir%\*.suo /q
-del ..\%outputDir%\*.sdf /q
-del ..\%outputDir%\*.user /q
-
-del ..\%outputDir%\.gitignore /q
-rmdir ..\%outputDir%\.git /s /q
-
-rmdir ..\%outputDir%\ipch /q
-
-del ..\%outputDir%\*.bat /q
-
 cd ..\%outputDir%
+
+del *.opensdb /q
+del *.ncb /q
+del *.suo /q
+del *.sdf /q
+del *.user /q
+
+del .gitignore /q
+rmdir .git /s /q
+
+rmdir ipch /q
+
+del *.bat /q
+
 for /d /r . %%d in (Debug,Release) do @if exist "%%d" rd /s /q "%%d"
 
 echo.
