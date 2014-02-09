@@ -1,5 +1,5 @@
 echo off 
-echo PrepForSubmission.bat v1.2 (updated 31 Jan 2014)
+echo PrepForSubmission.bat v1.3 (updated 10 Feb 2014)
 echo By Joey Foo (joeyfoo.com) and contributors
 echo -----
 echo.
@@ -30,7 +30,7 @@ del *.user /q
 del .gitignore /q
 rmdir .git /s /q
 
-rmdir ipch /q
+rmdir ipch /S /q
 
 del *.bat /q
 
