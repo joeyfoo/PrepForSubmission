@@ -6,6 +6,9 @@ A script I wrote to copy a Visual Studio solution directory, and delete unneeded
 *DISCLAIMER: This batch file is provided AS-IS, it's your responsibility to have backups, and to double-check before submission!*
 
 ## Changelog
+**v1.3** (10 February 2014)
+Added /S flag to rmdir command.
+
 **v1.2** (31 January 2014)
 * Cleaned up code. Thanks yohanesyuen! 
 
